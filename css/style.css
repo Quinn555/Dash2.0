@@ -165,7 +165,7 @@ body {
 /*White Background*/
 .whiteback {
   background-color: rgb(255, 255, 255);
-  width: 84%;
+  width: 100%;
   height: 95%;
   border-radius: 20px;
   padding: 20px;
@@ -179,7 +179,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .top {
@@ -195,14 +195,17 @@ body {
   background-color: #c8c4c4;
   position: relative;
   border-radius: 20px;
+  overflow: hidden;
 }
 
-.col h3, .col p, .col h4 {
+.col h1, .col h3, .col p, .col h4 {
   margin: 0;
+  color: white;
 }
 
 .small-col {
   display: flex;
+  flex-direction: column;
 }
 
 .col {
@@ -220,7 +223,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
   height: 100%;
   width: 200px;
   padding: 20px;
@@ -232,8 +235,8 @@ body {
 }
 
 .leftimg {
-  width: 350px;
-  height: 350px;
+  width: 50%;
+  height: 100%;
   position: absolute;
   right: 10px;
   bottom: 0px;
@@ -273,18 +276,14 @@ body {
 .col {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
   width: 200px;
   margin: 0 20px;
 }
 
-.num-img {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  right: 100px;
-  top: 0px;
+.dial-num {
+  display: flex;
+  align-items: center;
 }
 
 .num-img img {
@@ -326,9 +325,6 @@ body {
   background-color: rgb(255, 255, 255);
   width: 84%;
   height: 80%;
-  position: absolute;
-  bottom: 35px;
-  right: 40px;
   border-radius: 20px;
   padding: 20px;
   overflow-y: scroll;
@@ -644,12 +640,17 @@ a {
   border-top-right-radius: 10px;
 }
 
+.width-big {
+  width: 85%;
+  height: 100%;
+}
+
 @media (max-width: 785px) {
   .sidetop {
     width: 724px;
   }
 }
-@media (max-height: 1254px) {
+@media (min-height: 1254px) {
   .sidetop {
     width: 1138px;
   }
