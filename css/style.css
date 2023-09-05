@@ -1,9 +1,9 @@
-.num-img img, .leftimg img, body, html {
+.num-img img, .leftimg img, body, html, .bar-and-display {
   width: 100%;
   height: 100%;
 }
 
-.black-cir, .top-quin, .img-stats, .whiteback, .white-cir, .big-white-cir, .return, .topbar, .team, body {
+.black-cir, .top-quin, .img-stats, .white-cir, .big-white-cir, .return, .topbar, .team, body {
   display: flex;
   align-items: center;
 }
@@ -164,13 +164,13 @@ body {
 
 /*White Background*/
 .whiteback {
-  background-color: #fff;
-  height: 80%;
-  position: absolute;
-  bottom: 50px;
-  right: 95px;
+  background-color: rgb(255, 255, 255);
+  width: 84%;
   border-radius: 20px;
-  justify-content: center;
+  padding: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
 }
 
 .main {
