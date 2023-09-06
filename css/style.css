@@ -1,4 +1,4 @@
-.num-img img, .leftimg img, body, html, .bar-and-display {
+.num-img img, .leftimg img, body, html {
   width: 100%;
   height: 100%;
 }
@@ -17,6 +17,8 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 50px;
+  height: 90%;
+  width: 100%;
 }
 
 .logo {
@@ -97,6 +99,7 @@ body {
   height: 90%;
   width: 100px;
   justify-content: space-around;
+  align-items: center;
 }
 
 .topbar {
@@ -323,8 +326,8 @@ body {
 /*page in middle*/
 .page {
   background-color: rgb(255, 255, 255);
-  width: 84%;
-  height: 80%;
+  width: 100%;
+  height: 95%;
   border-radius: 20px;
   padding: 20px;
   overflow-y: scroll;
@@ -517,7 +520,8 @@ a {
 /*stats layout*/
 .main-stats {
   background-color: rgb(255, 255, 255);
-  width: 84%;
+  width: 100%;
+  height: 95%;
   border-radius: 20px;
   padding: 20px;
   overflow-y: scroll;
@@ -643,15 +647,4 @@ a {
 .width-big {
   width: 85%;
   height: 100%;
-}
-
-@media (max-width: 785px) {
-  .sidetop {
-    width: 724px;
-  }
-}
-@media (min-height: 1254px) {
-  .sidetop {
-    width: 1138px;
-  }
 }/*# sourceMappingURL=style.css.map */
