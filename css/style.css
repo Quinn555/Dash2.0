@@ -180,6 +180,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .top {
@@ -196,6 +197,7 @@ body {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
+  padding: 10px;
 }
 
 .col h1, .col h3, .col p, .col h4 {
@@ -643,6 +645,95 @@ a {
 .width-big {
   width: 85%;
   height: 100%;
+}
+
+.rate-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  padding: 5px;
+}
+
+.rate-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.rate p {
+  font-size: 10px;
+}
+
+.rate-box h1 {
+  font-size: 100px;
+  color: rgb(0, 0, 0);
+}
+
+.rate {
+  width: 100px;
+  height: 100px;
+}
+
+.rate img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+span > p {
+  padding-top: 10px;
+}
+
+.rate-flex-on {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.plus-two {
+  background-color: white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  padding: 2px;
+}
+
+.half-circle {
+  width: 100px;
+  height: 50px; /* as the half of the width */
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 110px; /* 100px of height + 10px of border */
+  border-top-right-radius: 110px; /* 100px of height + 10px of border */
+  border: 10px solid rgb(0, 0, 0);
+  border-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.rotation img {
+  width: 50px;
+  height: 50px;
+}
+
+.rotation {
+  animation: rotation 2s linear;
+  transform: rotate(90deg);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+.good-dial {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media (max-width: 785px) {
