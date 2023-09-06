@@ -21,7 +21,8 @@ $f: flex;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 50px;
-    @extend %genralsize;
+    height: 90%;
+    width: 100%;
 }
 .logo{
     position: absolute;
@@ -101,6 +102,7 @@ body {
     height: 90%;
     width: 100px;
     justify-content: space-around;
+    align-items: center;
 }
 .topbar {
     @extend %flexYcenter;
@@ -312,8 +314,8 @@ body {
 /*page in middle*/
 .page{
     background-color: rgb(255, 255, 255);
-    width: 84%;
-    height: 80%;
+    width: 100%;
+    height: 95%;
     border-radius: 20px;
     padding: 20px;
     overflow-y: scroll;
@@ -503,7 +505,8 @@ a{
 
 .main-stats{
     background-color: rgb(255, 255, 255);
-    width: 84%;
+    width: 100%;
+    height: 95%;
     border-radius: 20px;
     padding: 20px;
     overflow-y: scroll;
@@ -598,7 +601,7 @@ a{
 }
 .right-of-main-stats{
     display: $f;
-    width: 30%;;
+    width: 30%;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -699,15 +702,4 @@ span > p {
     width: 100px;
     height: 100px;
     object-fit: contain;
-}
-
-@media (max-width: 785px) {
-    .sidetop{
-        width: 724px;
-    }
-}
-@media (min-height: 1254px) {
-    .sidetop{
-        width: 1138px;
-    }
 }
